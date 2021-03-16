@@ -1,3 +1,5 @@
+#Run the code
+
 '''This Function finds the gcd of two numbers and prints the steps'''
 def gcd(a,b):
     r=1
@@ -68,7 +70,9 @@ def Remainder(steps):
 
 
 
-def linear_comb(x,y):
+def linear_comb():
+    x=eval(input('Enter first number : '))
+    y=eval(input('Enter second number : '))
     steps=gcd_steps(x,y)
     r_list,a=Remainder(steps)
     comb=Simplify0(r_list[0], r_list[1])
@@ -82,4 +86,5 @@ def linear_comb(x,y):
     gcd(x,y)
     print(a,'=',comb)
 
-linear_comb(6488,956) #INSERT THE TWO NUMBERS
+linear_comb()
+#Run the code
